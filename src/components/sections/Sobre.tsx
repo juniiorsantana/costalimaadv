@@ -4,7 +4,11 @@ export default function Sobre() {
     return (
         <section className="sobre" id="sobre">
             <div className="sobre-photo reveal">
-                <span className="sobre-photo-placeholder">CL</span>
+                <img
+                    src="https://majorhub.com.br/wp-content/uploads/2026/03/foto-dra-sara-lima-1-1.avif"
+                    alt="Dra. Sarah Lima Costa"
+                    className="w-full h-full object-cover rounded-2xl shadow-xl border border-white/10"
+                />
             </div>
             <div className="sobre-content reveal" style={{ transitionDelay: "0.15s" }}>
                 <p className="eyebrow">Nossa equipe</p>

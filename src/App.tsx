@@ -85,17 +85,6 @@ function App() {
         { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: "expo.out", delay: 0.2 }
       );
 
-      // Parallax in Hero
-      gsap.to('.hero-bg', {
-        yPercent: 30,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".hero",
-          start: "top top",
-          end: "bottom top",
-          scrub: true
-        }
-      });
     });
 
     return () => {

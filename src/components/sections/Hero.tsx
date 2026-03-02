@@ -6,11 +6,11 @@ export default function Hero() {
         <>
             {/* ─── MOBILE HERO ─── */}
             <section
-                className="lg:hidden flex flex-col w-full bg-[var(--bg)]"
+                className="lg:hidden flex flex-col w-full bg-[#6f4821]"
                 id="hero"
             >
                 {/* Content block — fundo sólido da marca */}
-                <div className="flex flex-col items-center text-center px-6 pt-10 pb-8 bg-[var(--bg)]">
+                <div className="flex flex-col items-center text-center px-6 pt-10 pb-8 bg-[#6f4821]">
                     <img
                         src="https://majorhub.com.br/wp-content/uploads/2026/03/logo-v-branca.svg"
                         alt="Costa Lima Advocacia"
@@ -57,7 +57,7 @@ export default function Hero() {
 
                 {/* Imagem completa — sem corte */}
                 <img
-                    src="https://majorhub.com.br/wp-content/uploads/2026/03/bg-mobile-large.avif"
+                    src="https://majorhub.com.br/wp-content/uploads/2026/03/bg-mobile.avif"
                     alt="Dra. Sarah Lima - Costa Lima Advocacia"
                     className="w-full h-auto block"
                     loading="eager"
@@ -74,7 +74,7 @@ export default function Hero() {
                 <img
                     src="https://majorhub.com.br/wp-content/uploads/2026/03/Bg-hero-atualizado.avif"
                     alt="Costa Lima Advocacia"
-                    className="hero-bg absolute inset-0 w-full h-[115%] -top-[7%] object-cover object-[65%_50%] will-change-transform z-0"
+                    className="hero-bg absolute inset-0 w-full h-full object-cover object-[65%_50%] z-0"
                     loading="eager"
                     decoding="async"
                 />

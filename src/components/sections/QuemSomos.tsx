@@ -1,7 +1,7 @@
 import React from 'react';
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import { Handshake, Zap, GraduationCap, MessageCircleHeart } from "lucide-react";
-const bgImage = '/Imagens/Seção 2 bg.avif';
+
 
 interface GridItemProps {
     area: string;
@@ -44,11 +44,20 @@ const GridItem = ({ area, icon, title, description }: GridItemProps) => {
 export default function QuemSomos() {
     return (
         <section className="relative py-28 px-[5vw] bg-[#F5F2EE] overflow-hidden" id="quem">
-            {/* Background Texture */}
-            <div
-                className="absolute inset-0 opacity-40 md:opacity-100 bg-[50%_35%] bg-cover bg-no-repeat z-0 pointer-events-none mix-blend-multiply"
-                style={{ backgroundImage: `url("${bgImage}")` }}
-            ></div>
+            {/* Background — Mobile */}
+            <img
+                src="https://majorhub.com.br/wp-content/uploads/2026/03/Secao-2-mobile.avif"
+                alt=""
+                aria-hidden="true"
+                className="block md:hidden absolute inset-0 w-full h-full object-cover object-center z-0 pointer-events-none mix-blend-multiply opacity-60"
+            />
+            {/* Background — Desktop */}
+            <img
+                src="https://majorhub.com.br/wp-content/uploads/2026/03/Secao-2-copiar.avif"
+                alt=""
+                aria-hidden="true"
+                className="hidden md:block absolute inset-0 w-full h-full object-cover object-[50%_35%] z-0 pointer-events-none mix-blend-multiply"
+            />
 
             <div className="container relative z-10 max-w-[800px] mx-auto">
                 <div className="reveal">

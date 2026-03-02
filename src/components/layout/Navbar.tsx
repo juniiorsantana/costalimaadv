@@ -6,23 +6,47 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let rafId: number;
+    // Hysteresis thresholds: prevent toggling in the transition zone
+    const THRESHOLD_DOWN = 60;  // activates scrolled state going down
+    const THRESHOLD_UP = 20;  // deactivates scrolled state coming back up
+
     const handleScroll = () => {
-      if (window.scrollY > 30) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        const y = window.scrollY;
+        setScrolled(prev => {
+          if (!prev && y > THRESHOLD_DOWN) return true;
+          if (prev && y < THRESHOLD_UP) return false;
+          return prev; // no state change = no re-render
+        });
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(rafId);
+    };
   }, []);
 
   return (
     <>
       <nav className={`hidden lg:flex nav ${scrolled ? 'scrolled' : ''}`} id="main-nav">
-        <a href="#hero" className="nav-logo" aria-label="Costa Lima Advocacia">
-          <img src="Imagens/Logo v2.png" alt="Costa Lima Advocacia" className="nav-logo-img" />
+        <a href="#hero" className="nav-logo nav-logo--crossfade" aria-label="Costa Lima Advocacia">
+          {/* Light logo — visible when header is transparent */}
+          <img
+            src="https://majorhub.com.br/wp-content/uploads/2026/03/logo-branco-v2.svg"
+            alt="Costa Lima Advocacia"
+            className={`nav-logo-img nav-logo-light ${scrolled ? 'logo-hidden' : 'logo-visible'}`}
+          />
+          {/* Dark logo — visible when header is scrolled */}
+          <img
+            src="Imagens/Logo v2.png"
+            alt=""
+            aria-hidden="true"
+            className={`nav-logo-img nav-logo-dark ${scrolled ? 'logo-visible' : 'logo-hidden'}`}
+          />
         </a>
         <div className="nav-links">
           <a href="#quem">Sobre</a>
