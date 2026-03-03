@@ -12,7 +12,7 @@ export function CtaFinal() {
                 <div className="cta-final-btns">
                     <HoverBorderGradient
                         as="a"
-                        href="https://wa.me/556512345678"
+                        href="https://wa.me/5565998061528"
                         target="_blank"
                         rel="noopener noreferrer"
                         containerClassName="rounded-lg bg-white hover:bg-white"
@@ -20,7 +20,7 @@ export function CtaFinal() {
                     >
                         Agende via WhatsApp →
                     </HoverBorderGradient>
-                    <a href="mailto:contato@costalima.com.br" className="btn btn-ghost-dark">Enviar mensagem</a>
+                    <a href="mailto:sarahcccostalima@gmail.com" className="btn btn-ghost-dark">Enviar mensagem</a>
                 </div>
                 <p className="cta-final-info">Costa Lima Advocacia · Regularização de Imóveis · Usucapião · Cáceres-MT · OAB-MT</p>
             </div>
@@ -66,9 +66,9 @@ export function Footer() {
                 <div>
                     <h4>Contato</h4>
                     <ul>
-                        <li>(65) 1234-5678</li>
-                        <li>contato@costalima.com.br</li>
-                        <li>Cáceres, Mato Grosso — MT</li>
+                        <li>65 99806-1528 // 67 99630-9209</li>
+                        <li>sarahcccostalima@gmail.com</li>
+                        <li>Rua 6 de Outubro, 199 - Centro, Cáceres/MT - CEP 78210-082</li>
                         <li>Seg–Sex: 8h–18h</li>
                     </ul>
                 </div>
@@ -84,7 +84,7 @@ export function Footer() {
 
 export function WhatsappFloat() {
     return (
-        <a href="https://wa.me/556512345678" className="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        <a href="https://wa.me/5565998061528" className="whatsapp-float" target="_blank" rel="noopener noreferrer"
             aria-label="Abrir WhatsApp">
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <path

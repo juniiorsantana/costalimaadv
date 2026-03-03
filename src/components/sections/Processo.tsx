@@ -14,7 +14,7 @@ export default function Processo() {
                     <div className="processo-cta" style={{ marginTop: "2.5rem" }}>
                         <HoverBorderGradient
                             as="a"
-                            href="https://wa.me/556512345678"
+                            href="https://wa.me/5565998061528"
                             target="_blank"
                             rel="noopener noreferrer"
                             containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]"

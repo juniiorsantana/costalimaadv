@@ -37,7 +37,7 @@ export default function Hero() {
                     <div className="flex flex-col gap-3 w-full max-w-[280px]">
                         <HoverBorderGradient
                             as="a"
-                            href="https://wa.me/556512345678"
+                            href="https://wa.me/5565998061528"
                             target="_blank"
                             rel="noopener noreferrer"
                             containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915] w-full"
@@ -57,7 +57,7 @@ export default function Hero() {
 
                 {/* Imagem completa — sem corte */}
                 <img
-                    src="https://majorhub.com.br/wp-content/uploads/2026/03/bg-mobile.avif"
+                    src="https://majorhub.com.br/wp-content/uploads/2026/03/bg-mobile-new.avif"
                     alt="Dra. Sarah Lima - Costa Lima Advocacia"
                     className="w-full h-auto block"
                     loading="eager"
@@ -72,7 +72,7 @@ export default function Hero() {
             >
                 {/* Full-cover background image with parallax */}
                 <img
-                    src="https://majorhub.com.br/wp-content/uploads/2026/03/Bg-hero-atualizado.avif"
+                    src="https://majorhub.com.br/wp-content/uploads/2026/03/Bg-hero-new.avif"
                     alt="Costa Lima Advocacia"
                     className="hero-bg absolute inset-0 w-full h-full object-cover object-[65%_50%] z-0"
                     loading="eager"
@@ -105,7 +105,7 @@ export default function Hero() {
                         <div className="flex flex-row gap-3 items-start">
                             <HoverBorderGradient
                                 as="a"
-                                href="https://wa.me/556512345678"
+                                href="https://wa.me/5565998061528"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]"
@@ -126,17 +126,17 @@ export default function Hero() {
 
                 {/* Floating Trust Tags */}
                 <div className="absolute right-6 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-3">
-                    <div className="backdrop-blur-xl bg-white/25 border border-white/40 shadow-lg rounded-full px-5 py-2.5 flex items-center gap-3">
-                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-semibold text-[#874915]">+8</span>
-                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#5A4A3A] font-medium whitespace-nowrap">Anos de Exp.</span>
+                    <div className="backdrop-blur-md bg-white/90 border border-white/50 shadow-xl rounded-full px-5 py-2.5 flex items-center gap-3">
+                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-bold text-[#874915]">+8</span>
+                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#373737] font-semibold whitespace-nowrap">Anos de Exp.</span>
                     </div>
-                    <div className="backdrop-blur-xl bg-white/25 border border-white/40 shadow-lg rounded-full px-5 py-2.5 flex items-center gap-3">
-                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-semibold text-[#874915]">2</span>
-                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#5A4A3A] font-medium whitespace-nowrap">Pós-Graduações</span>
+                    <div className="backdrop-blur-md bg-white/90 border border-white/50 shadow-xl rounded-full px-5 py-2.5 flex items-center gap-3">
+                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-bold text-[#874915]">2</span>
+                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#373737] font-semibold whitespace-nowrap">Pós-Graduações</span>
                     </div>
-                    <div className="backdrop-blur-xl bg-white/25 border border-white/40 shadow-lg rounded-full px-5 py-2.5 flex items-center gap-3">
-                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-semibold text-[#874915]">100%</span>
-                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#5A4A3A] font-medium whitespace-nowrap">Foco em Resultado</span>
+                    <div className="backdrop-blur-md bg-white/90 border border-white/50 shadow-xl rounded-full px-5 py-2.5 flex items-center gap-3">
+                        <span className="font-['Cormorant_Garamond',Georgia,serif] text-xl font-bold text-[#874915]">100%</span>
+                        <span className="text-[0.62rem] uppercase tracking-[0.13em] text-[#373737] font-semibold whitespace-nowrap">Foco em Resultado</span>
                     </div>
                 </div>
             </section>

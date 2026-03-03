@@ -26,21 +26,21 @@ export default function Contato() {
                             <span className="contato-item-icon">📱</span>
                             <div>
                                 <div className="contato-item-label">WhatsApp</div>
-                                <div className="contato-item-value">(65) 1234-5678</div>
+                                <div className="contato-item-value">65 99806-1528 // 67 99630-9209</div>
                             </div>
                         </div>
                         <div className="contato-item">
                             <span className="contato-item-icon">✉️</span>
                             <div>
                                 <div className="contato-item-label">E-mail</div>
-                                <div className="contato-item-value">contato@costalima.com.br</div>
+                                <div className="contato-item-value">sarahcccostalima@gmail.com</div>
                             </div>
                         </div>
                         <div className="contato-item">
                             <span className="contato-item-icon">📍</span>
                             <div>
                                 <div className="contato-item-label">Endereço</div>
-                                <div className="contato-item-value">Cáceres, Mato Grosso — MT</div>
+                                <div className="contato-item-value">Rua 6 de Outubro, 199 - Centro, Cáceres/MT - CEP 78210-082</div>
                             </div>
                         </div>
                         <div className="contato-item">
@@ -52,8 +52,8 @@ export default function Contato() {
                         </div>
                     </div>
                     <div className="contato-actions">
-                        <HoverBorderGradient as="a" href="https://wa.me/556512345678" target="_blank" rel="noopener noreferrer" containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]" className="text-white uppercase text-[0.78rem] tracking-[0.1em] font-medium">WhatsApp</HoverBorderGradient>
-                        <a href="mailto:contato@costalima.com.br" className="btn btn-outline">Enviar e-mail</a>
+                        <HoverBorderGradient as="a" href="https://wa.me/5565998061528" target="_blank" rel="noopener noreferrer" containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]" className="text-white uppercase text-[0.78rem] tracking-[0.1em] font-medium">WhatsApp</HoverBorderGradient>
+                        <a href="mailto:sarahcccostalima@gmail.com" className="btn btn-outline">Enviar e-mail</a>
                     </div>
                     <div className="contato-social">
                         <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>

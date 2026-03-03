@@ -15,7 +15,7 @@ export default function Alerta() {
                     sensação de segurança em proteção real para o seu patrimônio.</p>
                 <p className="alerta-source">Realidade verificada na prática de advocacia imobiliária em Cáceres-MT e região.</p>
                 <div className="flex justify-center w-full mt-10">
-                    <HoverBorderGradient as="a" href="https://wa.me/556512345678" target="_blank" rel="noopener noreferrer" containerClassName="rounded-lg bg-[var(--areia)] hover:bg-[var(--areia)]" className="text-[var(--text)] uppercase text-[0.78rem] tracking-[0.1em] font-medium">Quero analisar meu imóvel →</HoverBorderGradient>
+                    <HoverBorderGradient as="a" href="https://wa.me/5565998061528" target="_blank" rel="noopener noreferrer" containerClassName="rounded-lg bg-[var(--areia)] hover:bg-[var(--areia)]" className="text-[var(--text)] uppercase text-[0.78rem] tracking-[0.1em] font-medium">Quero analisar meu imóvel →</HoverBorderGradient>
                 </div>
             </div>
         </section>

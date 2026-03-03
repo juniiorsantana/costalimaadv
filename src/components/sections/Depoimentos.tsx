@@ -23,7 +23,7 @@ export default function Depoimentos() {
                     </div>
                 </div>
                 <div className="depoimentos-cta reveal">
-                    <a href="mailto:contato@costalima.com.br?subject=Depoimento">Foi cliente? Envie seu depoimento →</a>
+                    <a href="mailto:sarahcccostalima@gmail.com?subject=Depoimento">Foi cliente? Envie seu depoimento →</a>
                 </div>
             </div>
         </section>
