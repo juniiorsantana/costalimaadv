@@ -19,7 +19,7 @@ export default function Hero() {
 
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#874915]/20 border border-[#874915]/40 mb-5">
                         <p className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-[#E5BF8E]">
-                            Dra. Sarah Lima - OAB/MT 31882
+                            Dra. Sarah Lima da Costa Godoy - OAB/MT 31882
                         </p>
                     </div>
 
