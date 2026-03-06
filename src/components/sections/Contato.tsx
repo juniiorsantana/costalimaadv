@@ -55,11 +55,6 @@ export default function Contato() {
                         <HoverBorderGradient as="a" href="https://wa.me/5565998061528" target="_blank" rel="noopener noreferrer" containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]" className="text-white uppercase text-[0.78rem] tracking-[0.1em] font-medium">WhatsApp</HoverBorderGradient>
                         <a href="mailto:sarahcccostalima@gmail.com" className="btn btn-outline">Enviar e-mail</a>
                     </div>
-                    <div className="contato-social">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
-                    </div>
                 </div>
 
                 <div className="reveal" style={{ transitionDelay: "0.15s" }}>

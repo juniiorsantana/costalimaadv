@@ -37,7 +37,7 @@ export default function Sobre() {
                 <ul className="sobre-list">
                     <li>Pós-graduada em Direito Imobiliário e Notarial — ESA</li>
                     <li>Especialização em Contratos — foco em Direito Imobiliário</li>
-                    <li>OAB-MT · Cáceres, Mato Grosso</li>
+                    <li>OAB/MT 31882 · Cáceres, Mato Grosso</li>
                 </ul>
                 <a href="#contato" className="btn btn-outline">Ver perfil completo →</a>
             </div>

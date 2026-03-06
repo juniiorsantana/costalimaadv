@@ -5,6 +5,7 @@
 /* ── Tokens ── */
 :root {
   --accent: #874915;
+  --brand-accent: #874915;
   --accent-hover: #6B3A10;
   --support: #8D6E59;
   --bege: #BDB5AB;
@@ -21,6 +22,7 @@
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Outfit', system-ui, sans-serif;
   --radius: 2px;
+  --brand-radius: 2px;
   --max-w: 72rem;
   --max-w-narrow: 52rem;
   --pad-section: 7rem 5vw;

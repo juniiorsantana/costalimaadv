@@ -22,7 +22,7 @@ export function CtaFinal() {
                     </HoverBorderGradient>
                     <a href="mailto:sarahcccostalima@gmail.com" className="btn btn-ghost-dark">Enviar mensagem</a>
                 </div>
-                <p className="cta-final-info">Costa Lima Advocacia · Regularização de Imóveis · Usucapião · Cáceres-MT · OAB-MT</p>
+                <p className="cta-final-info">Costa Lima Advocacia · Regularização de Imóveis · Usucapião · Cáceres-MT · OAB/MT 31882</p>
             </div>
         </section>
     );
@@ -37,9 +37,6 @@ export function Footer() {
                     <p className="footer-brand-desc">Segurança jurídica para proteger seu patrimônio imobiliário em Cáceres e todo o
                         Mato Grosso.</p>
                     <div className="footer-social">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
                     </div>
                 </div>
                 <div>
@@ -75,7 +72,7 @@ export function Footer() {
             </div>
             <div className="footer-bottom">
                 <p>© 2026 Costa Lima Advocacia. Todos os direitos reservados.</p>
-                <p className="footer-bottom-keywords">OAB-MT · Cáceres-MT · Direito Imobiliário · Regularização de Imóveis · Usucapião
+                <p className="footer-bottom-keywords">OAB/MT 31882 · Cáceres-MT · Direito Imobiliário · Regularização de Imóveis · Usucapião
                 </p>
             </div>
         </footer>

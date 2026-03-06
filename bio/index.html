@@ -209,7 +209,8 @@
 
     .link-card.featured {
       border-color: rgba(139, 111, 71, 0.5);
-      background: linear-gradient(135deg, rgba(107, 80, 53, 0.35) 0%, rgba(26, 21, 16, 0.75) 60%);
+      background: linear-gradient(135deg, rgba(107, 80, 53, 0.5) 0%, rgba(26, 21, 16, 0.85) 60%);
+      box-shadow: 0 0 24px rgba(139, 111, 71, 0.35);
     }
 
     .link-card::before {
@@ -256,12 +257,12 @@
 
     .card-title {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(15px, 3.5vw, 18px);
-      /* slightly smaller */
+      font-size: clamp(14px, 3.5vw, 17px);
       font-weight: 600;
       color: var(--offwhite);
       line-height: 1.25;
-      word-wrap: break-word;
+      white-space: nowrap;
+      word-wrap: normal;
     }
 
     .link-card.full .card-title {
@@ -366,6 +367,12 @@
         opacity: 1;
       }
     }
+
+    @media (max-width: 360px) {
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -410,64 +417,105 @@
       <div class="divider-line"></div>
       <span class="divider-ornament">✦</span>
       <div class="divider-line"></div>
+    </div>
 
-      <!-- LINKS -->
-      <div class="links-grid">
+    <!-- LINKS -->
+    <div class="links-grid">
 
-        <!-- WhatsApp - destaque -->
-        <a href="https://wa.me/5565998061528?text=Ol%C3%A1%2C%20queria%20falar%20com%20um%20especialista.%20Poderia%20me%20ajudar%3F"
-          class="link-card full featured" target="_blank" rel="noopener">
-          <span class="card-icon">💬</span>
-          <div>
-            <span class="card-label">Fale Conosco</span>
-            <span class="card-title">Consulta via WhatsApp</span>
-          </div>
-        </a>
-
-        <!-- Serviço imobiliário -->
-        <a href="https://wa.me/5565998061528?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20um%20advogado%20especialista%20em%20Direito%20Imobili%C3%A1rio."
-          class="link-card" target="_blank" rel="noopener">
-          <span class="card-icon">🏛</span>
-          <span class="card-label">Especialidade</span>
-          <span class="card-title">Direito Imobiliário</span>
-        </a>
-
-        <!-- Previdenciário -->
-        <a href="https://wa.me/5565998061528?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20um%20advogado%20especialista%20em%20Direito%20Previdenci%C3%A1rio."
-          class="link-card" target="_blank" rel="noopener">
-          <span class="card-icon">⚖️</span>
-          <span class="card-label">Especialidade</span>
-          <span class="card-title">Direito Previdenciário</span>
-        </a>
-
-        <!-- Site principal -->
-        <a href="https://advcostalima.com.br" class="link-card full" target="_blank" rel="noopener">
-          <span class="card-icon">🌐</span>
-          <div>
-            <span class="card-label">Nosso Site</span>
-            <span class="card-title">advcostalima.com.br</span>
-          </div>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/sarah_lmc/" class="link-card" target="_blank" rel="noopener">
-          <span class="card-icon">📸</span>
-          <span class="card-label">Instagram</span>
-          <span class="card-title">@sarah_lmc</span>
-        </a>
-
-      </div>
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="footer-divider">
-          <div class="divider-line"></div>
-          <span class="divider-ornament" style="color:var(--bronze);font-size:9px;">✦</span>
-          <div class="divider-line"></div>
+      <!-- WhatsApp - destaque -->
+      <a href="https://wa.me/5565998061528?text=Ol%C3%A1%2C%20queria%20falar%20com%20um%20especialista.%20Poderia%20me%20ajudar%3F"
+        class="link-card full featured" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+        <div>
+          <span class="card-label">Fale Conosco</span>
+          <span class="card-title">Consulta via WhatsApp</span>
         </div>
-        <p>© 2026 Costa Lima Advocacia · OAB/MT 31882</p>
-        <p style="margin-top:4px;">Cáceres — Mato Grosso</p>
-      </footer>
+      </a>
+
+      <!-- Serviço imobiliário -->
+      <a href="https://wa.me/5565998061528?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20um%20advogado%20especialista%20em%20Direito%20Imobili%C3%A1rio."
+        class="link-card" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <line x1="3" y1="22" x2="21" y2="22" />
+          <line x1="6" y1="18" x2="6" y2="11" />
+          <line x1="10" y1="18" x2="10" y2="11" />
+          <line x1="14" y1="18" x2="14" y2="11" />
+          <line x1="18" y1="18" x2="18" y2="11" />
+          <polygon points="12 2 20 7 4 7" />
+        </svg>
+        <span class="card-label">Especialidade</span>
+        <span class="card-title">Direito Imobiliário</span>
+      </a>
+
+      <!-- Previdenciário -->
+      <a href="https://wa.me/5565998061528?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20consulta%20com%20um%20advogado%20especialista%20em%20Direito%20Previdenci%C3%A1rio."
+        class="link-card" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <span class="card-label">Especialidade</span>
+        <span class="card-title">Direito Previdenciário</span>
+      </a>
+
+      <!-- Site principal -->
+      <a href="https://advcostalima.com.br" class="link-card full" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+        </svg>
+        <div>
+          <span class="card-label">Nosso Site</span>
+          <span class="card-title">advcostalima.com.br</span>
+        </div>
+      </a>
+
+      <!-- Blog -->
+      <a href="https://advcostalima.com.br/blog" class="link-card full" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+        </svg>
+        <div>
+          <span class="card-label">Conteúdo</span>
+          <span class="card-title">Blog Costa Lima</span>
+        </div>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/costalima.adv" class="link-card full" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4A882"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="card-icon">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+        </svg>
+        <div>
+          <span class="card-label">Social</span>
+          <span class="card-title">Instagram</span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-divider">
+        <div class="divider-line"></div>
+        <span class="divider-ornament" style="color:var(--bronze);font-size:9px;">✦</span>
+        <div class="divider-line"></div>
+      </div>
+      <p>© 2026 Costa Lima Advocacia · OAB/MT 31882</p>
+      <p style="margin-top:4px;">Cáceres — Mato Grosso</p>
+    </footer>
 
   </main>
 
