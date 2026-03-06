@@ -12,6 +12,10 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        bio: path.resolve(__dirname, 'bio/index.html'),
+      },
       output: {
         manualChunks: {
           'vendor-animation': ['gsap', 'motion'],
