@@ -179,7 +179,8 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
-      padding: 20px 18px 18px;
+      padding: 18px 14px 14px;
+      /* Reduced side padding slightly */
       border-radius: 2px;
       border: 1px solid rgba(139, 111, 71, 0.25);
       background: rgba(26, 21, 16, 0.6);
@@ -240,21 +241,27 @@
 
     .card-label {
       font-family: 'Cinzel', serif;
-      font-size: 11px;
+      font-size: 10px;
+      /* Reduced from 11px */
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      /* Reduced from 2px */
       color: var(--bronze-light);
       text-transform: uppercase;
       margin-bottom: 4px;
       display: block;
+      white-space: normal;
+      word-wrap: break-word;
     }
 
     .card-title {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(16px, 4vw, 19px);
+      font-size: clamp(15px, 3.5vw, 18px);
+      /* slightly smaller */
       font-weight: 600;
       color: var(--offwhite);
       line-height: 1.25;
+      word-wrap: break-word;
     }
 
     .link-card.full .card-title {
