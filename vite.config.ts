@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: path.resolve(__dirname, 'index.html'),
         bio: path.resolve(__dirname, 'bio/index.html'),
+        jucelilents: path.resolve(__dirname, 'jucelilents/index.html'),
       },
       output: {
         manualChunks: {
