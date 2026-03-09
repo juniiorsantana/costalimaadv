@@ -22,7 +22,6 @@ import './styles.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// ErrorBoundary para capturar falhas silenciosas
 class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
   constructor(props: { children: ReactNode }) {
     super(props);
@@ -35,7 +34,6 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { hasError: boole
 function App() {
   const lenisRef = useRef<Lenis | null>(null);
 
-  // Lenis + ScrollTrigger setup — roda uma vez no mount
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
 
@@ -59,7 +57,7 @@ function App() {
       gsap.ticker.lagSmoothing(0);
     }
 
-    // Hero animation — elementos já estão no DOM, pode animar direto
+    // Hero — único que anima no mount pois já está no DOM
     gsap.fromTo(
       ".hero-content > *",
       { y: 30, opacity: 0 },
@@ -72,42 +70,36 @@ function App() {
     };
   }, []);
 
-  // Função chamada quando os lazy components terminam de carregar
   const handleLazyLoaded = () => {
-    // Aguarda o DOM ser pintado antes de registrar os ScrollTriggers
-    requestAnimationFrame(() => {
-      setTimeout(() => {
-        const revealElements = document.querySelectorAll(
-          '.reveal, .s-card, .step-card, .value-card, h2, .eyebrow'
-        );
+    // Timeout generoso para garantir que o DOM está completamente pintado
+    setTimeout(() => {
+      const revealElements = document.querySelectorAll<HTMLElement>(
+        '.reveal, .s-card, .step-card, .value-card, h2, .eyebrow'
+      );
 
-        revealElements.forEach((el) => {
-          const element = el as HTMLElement;
+      revealElements.forEach((element) => {
+        // Garante que o elemento está visível por padrão antes de qualquer animação
+        element.style.opacity = '1';
+        element.style.transform = 'none';
 
-          // IMPORTANTE: usar opacity em vez de autoAlpha
-          // autoAlpha usa visibility:hidden que pode não ser revertido
-          gsap.fromTo(
-            element,
-            { y: 40, opacity: 0 },
-            {
-              scrollTrigger: {
-                trigger: element,
-                start: "top 88%",
-                toggleActions: "play none none none", // não reverte ao scrollar de volta
-              },
-              y: 0,
-              opacity: 1,
-              duration: 1.0,
-              ease: "expo.out",
-              delay: element.dataset.delay ? parseFloat(element.dataset.delay) : 0,
-            }
-          );
+        gsap.to(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top 90%",
+            toggleActions: "play none none none",
+            once: true, // dispara apenas uma vez, nunca reverte
+          },
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          ease: "expo.out",
+          delay: element.dataset.delay ? parseFloat(element.dataset.delay) : 0,
+          clearProps: "all", // limpa inline styles após animação completar
         });
+      });
 
-        // Recalcula posições após registrar todos os triggers
-        ScrollTrigger.refresh();
-      }, 100);
-    });
+      ScrollTrigger.refresh();
+    }, 500); // 500ms garante DOM completamente renderizado
   };
 
   return (
@@ -115,10 +107,7 @@ function App() {
       <Navbar />
       <Hero />
       <ErrorBoundary>
-        <Suspense
-          fallback={<div style={{ minHeight: '100vh' }} />}
-        // @ts-ignore — onLoad via wrapper trick abaixo
-        >
+        <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
           <LazyWrapper onLoaded={handleLazyLoaded}>
             <QuemSomos />
             <Alerta />
@@ -138,7 +127,6 @@ function App() {
   );
 }
 
-// Componente auxiliar que dispara o callback depois que os filhos renderizam
 function LazyWrapper({ children, onLoaded }: { children: ReactNode; onLoaded: () => void }) {
   useEffect(() => {
     onLoaded();
