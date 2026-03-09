@@ -27,7 +27,7 @@ export default function Servicos() {
                         <div className="s-card-icon">🏠</div>
                         <h3>Regularização e assessoria imobiliária</h3>
                         <p className="s-card-desc">Compra e venda (urbano e rural), análise documental, due diligence, regularização por
-                            usucapião, doação e inventário. Garantimos segurança jurídica para seus negócios e investimentos em Cáceres
+                            usucapião, doação e inventário. Garantimos segurança jurídica para seus negócios e investimentos em todo Mato Grosso e Brasil
                             e todo o MT.</p>
                         <button className="s-card-toggle" aria-expanded={expandedCard === 0} onClick={() => toggleCard(0)}>
                             Ver mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>

@@ -47,7 +47,7 @@ export default function Contato() {
                             <span className="contato-item-icon">🕐</span>
                             <div>
                                 <div className="contato-item-label">Horário</div>
-                                <div className="contato-item-value">Seg–Sex: 8h–18h · Sáb: 8h–12h</div>
+                                <div className="contato-item-value">Segunda à Sexta: 8h às 11:30 e 13h às 18h</div>
                             </div>
                         </div>
                     </div>

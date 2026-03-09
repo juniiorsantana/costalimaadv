@@ -20,7 +20,7 @@ export default function Processo() {
                             containerClassName="rounded-lg bg-[#874915] hover:bg-[#874915]"
                             className="text-white uppercase text-[0.78rem] tracking-[0.1em] font-medium"
                         >
-                            Solicitar avaliação gratuita →
+                            Agendar com Consulta →
                         </HoverBorderGradient>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ export default function Processo() {
                     <div className="step-card reveal" data-delay="0.1">
                         <span className="step-number">02</span>
                         <h3>Diagnóstico e plano de ação</h3>
-                        <p>Análise técnica completa, identificação de riscos e pendências. Proposta de atuação clara com prazos e estimativa de custos.</p>
+                        <p>Análise técnica completa, identificação de riscos e pendências. Proposta de atuação clara com prazos e estimativa de custos. Fechamento de contrato, análise técnica completa, identificação de riscos.</p>
                     </div>
                     <div className="step-card reveal" data-delay="0.15">
                         <span className="step-number">03</span>

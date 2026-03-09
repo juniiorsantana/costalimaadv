@@ -189,7 +189,6 @@ h4 {
 }
 
 /* ── Reveal Animation (GSAP handles the rest) ── */
-.reveal {}
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {

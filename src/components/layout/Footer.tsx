@@ -7,8 +7,7 @@ export function CtaFinal() {
             <div className="container--narrow reveal">
                 <p className="eyebrow" style={{ color: "rgba(255,255,255,0.5)" }}>Advogado em Cáceres · Assessoria Imobiliária</p>
                 <h2>Pronto para proteger o que é seu?</h2>
-                <p className="cta-final-text">Atendimento humano, transparente e especializado em direito imobiliário e
-                    previdenciário. Sem juridiquês, sem enrolação. O primeiro passo é mais simples do que parece.</p>
+                <p className="cta-final-text">Atendimento personalizado, claro e especializado, com foco em proteção ao patrimônio, planejamento patrimonial, previdenciário, restituição de créditos e dívidas.</p>
                 <div className="cta-final-btns">
                     <HoverBorderGradient
                         as="a"
