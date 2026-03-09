@@ -38,6 +38,8 @@ export default function Navbar() {
           <img
             src="https://majorhub.com.br/wp-content/uploads/2026/03/logo-branco-v2.svg"
             alt="Costa Lima Advocacia"
+            width="160"
+            height="45"
             className={`nav-logo-img nav-logo-light ${scrolled ? 'logo-hidden' : 'logo-visible'}`}
           />
           {/* Dark logo — visible when header is scrolled */}
@@ -45,6 +47,8 @@ export default function Navbar() {
             src="Imagens/Logo v2.png"
             alt=""
             aria-hidden="true"
+            width="160"
+            height="45"
             className={`nav-logo-img nav-logo-dark ${scrolled ? 'logo-visible' : 'logo-hidden'}`}
           />
         </a>

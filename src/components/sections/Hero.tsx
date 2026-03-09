@@ -14,7 +14,9 @@ export default function Hero() {
                     <img
                         src="https://majorhub.com.br/wp-content/uploads/2026/03/logo-v-branca.svg"
                         alt="Costa Lima Advocacia"
-                        className="h-20 mb-6"
+                        width="80"
+                        height="80"
+                        className="h-20 w-20 mb-6"
                     />
 
                     <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#874915]/20 border border-[#874915]/40 mb-5">
@@ -59,7 +61,9 @@ export default function Hero() {
                 <img
                     src="https://majorhub.com.br/wp-content/uploads/2026/03/bg-mobile-new.avif"
                     alt="Dra. Sarah Lima - Costa Lima Advocacia"
-                    className="w-full h-auto block"
+                    width="430"
+                    height="932"
+                    className="w-full h-[auto] block max-h-[100svh] object-cover"
                     loading="eager"
                     decoding="async"
                 />
@@ -74,6 +78,8 @@ export default function Hero() {
                 <img
                     src="https://majorhub.com.br/wp-content/uploads/2026/03/Bg-hero-new.avif"
                     alt="Costa Lima Advocacia"
+                    width="1920"
+                    height="1080"
                     className="hero-bg absolute inset-0 w-full h-full object-cover object-[65%_50%] z-0"
                     loading="eager"
                     decoding="async"
